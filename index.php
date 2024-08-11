@@ -25,13 +25,20 @@
         </form>
 
         <?php
+        // Pour démarrer la session
         session_start();
+
+        // Retourne true si la variable $_SESSION['password'] existe et n'est pas null.
+        // Et si le mot de passe est générer et stocké dans la session
         if (isset($_SESSION['password'])) {
+
+            // Crée un bloc HTML pour afficher le mot de passe
             echo '<div class="result">
                 <h2>Mot de Passe Généré :</h2>
                 <p>' . htmlspecialchars($_SESSION['password']) . '</p>
             </div>';
-            // Effacer le mot de passe de la session après l'affichage
+            
+            // Efface de le mot de passe après l'avoir affiché
             unset($_SESSION['password']);
         }
         ?>
