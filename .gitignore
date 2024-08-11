@@ -1,0 +1,17 @@
+# Ignorer les fichiers de configuration de l'IDE
+.idea/
+.vscode/
+
+# Ignorer les fichiers de dépendances générés
+/vendor/
+node_modules/
+
+# Ignorer les fichiers de build temporaires
+*.log
+*.tmp
+
+# Ignorer les fichiers de cache
+.cache/
+
+# Ignorer les fichiers de déploiement (si nécessaire)
+deploy/
